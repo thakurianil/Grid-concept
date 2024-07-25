@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            gap: 5px;
+            grid-template-areas:
+                "Globle Globle Globle"
+                "nav nav nav"
+                "banner banner off1"
+                "banner banner off2"
+                "lm product product"
+                "recent product product"
+                "tags product product"
+                "footer footer footer";
+            grid-template-columns: repeat(3,auto);
+            grid-template-rows: repeat();
+            gap: 5px;
+        }
+        .Globle {
+            grid-area: Globle;
+            background-color:blue;
+            height: 50px;
+            font-size: 30px;
+            text-align: center;
+            align-content: center;
+            color: aliceblue;
+            margin-bottom: 1%;
+        }
+        .nav{
+            grid-area: nav;
+            background: linear-gradient(to right, red, yellow);
+
+            /* background-color:red; */
+            height: 40px;
+            text-align: center;
+            align-content: center;
+            color: aliceblue;
+        }
+        .banner{
+            grid-area: banner;
+            background-color:rgb(135, 239, 7);
+            height: 105px;
+            text-align: center;
+            align-content: center;
+            /* color: aliceblue; */
+        }
+        .off1{
+            grid-area: off1;
+            background-color:rgb(128, 0, 255);
+            height: 50px;
+            text-align: center;
+            align-content: center;
+            /* color: aliceblue; */
+        }
+        .off2{
+            grid-area: off2;
+            background-color:rgb(230, 45, 45);
+            height: 50px;
+            text-align: center;
+            align-content: center;
+            /* color: aliceblue; */
+        }
+        .product{
+            grid-area: product;
+            /* background-color:brown; */
+            background: linear-gradient(to right, blue,orange );
+
+            height: 50px;
+            text-align: center;
+            align-content: center;
+            /* color: aliceblue; */
+            height: 160px;
+        }
+        .tag{
+            grid-area:tags;
+            background-color:orange;
+            height: 50px;
+            text-align: center;
+            align-content: center;
+            /* color: aliceblue; */
+        }
+        .lm{
+            grid-area: lm;
+            background-color:lightblue;
+            height: 50px;
+            text-align: center;
+            align-content: center;
+            /* color: aliceblue; */
+        }
+        .recent{
+            grid-area: recent;
+            background-color:purple;
+            height: 50px;
+            text-align: center;
+            align-content: center;
+            /* color: aliceblue; */
+        }
+        .footer{
+            grid-area: footer;
+            background-color:black;
+            height: 50px;
+            text-align: center;
+            align-content: center;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="Globle">1. Globle message</div>
+        <div class="nav">2. navbar</div>
+        <div class="banner">Banner</div>
+        <div class="off1">Offer1</div>
+        <div class="off2">Offer2</div>
+        <div class="lm">6. Left side Menu</div>
+        <div class="recent">7. recent</div>
+        <div class="tag">8. tags</div>
+        <div class="product">9. Product</div>
+        <div class="footer">Footer</div>
+
+    </div>
+    
+</body>
+</html>
