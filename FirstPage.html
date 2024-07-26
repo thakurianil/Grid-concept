@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first website</title>
+    <style>
+        *{
+            margin: 5px;
+            border: 3px;
+        }
+             .container{
+            display: grid;
+            grid-template-areas:
+                "heading heading heading"
+                "nav nav nav"
+                "banner banner off1"
+                "banner banner off2"
+                "lm product product"
+                "recent product product"
+                "tags product product"
+                "footer footer footer";
+            grid-template-columns: repeat(3, auto);
+            grid-template-rows: repeat(8, 100px);
+            gap: 5px;
+        }
+        .heading{
+            grid-area: heading;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="heading">
+                Hello
+            </div>
+        </div>
+</body>
+</html>
