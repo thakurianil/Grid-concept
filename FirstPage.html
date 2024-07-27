@@ -12,7 +12,7 @@
              .container{
             display: grid;
             grid-template-areas:
-                "heading heading heading"
+                "Hleft Hmid Hright"
                 "nav nav nav"
                 "banner banner off1"
                 "banner banner off2"
@@ -24,16 +24,43 @@
             grid-template-rows: repeat(8, 100px);
             gap: 5px;
         }
-        .heading{
-            grid-area: heading;
-            background-color: red;
+        .Hleft{
+            grid-area: Hleft;
+            /* background-color: rgb(85, 26, 26); */
+            font-size: 30px;
+            align-content: center;
+            text-align: center;
+            color: blue;
         }
+        .Hmid{
+            grid-area: Hmid;
+            background-color: rgb(105, 23, 23);
+            grid-template-columns: repeat(4,auto);
+            font-size: 30px;
+            align-content: center;
+            text-align: center;
+            gap: 100px;
+        }
+        .Hright{
+            grid-area: Hright;
+            background-color: rgb(231, 225, 225);
+        }
+
     </style>
 </head>
 <body>
         <div class="container">
-            <div class="heading">
-                Hello
+            <div class="Hleft">
+                COURSIS
+            </div>
+            <div class="Hmid">
+                <p1>Personal</p1>
+                <p2>Business</p2>
+                <p3>Partner</p3>
+                <p4>About Us</p4>
+            </div>
+            <div class="Hright">
+                <button>Sign In</button>
             </div>
         </div>
 </body>
