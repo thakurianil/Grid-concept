@@ -6,16 +6,21 @@
     <title>first website</title>
     <style>
         *{
-            margin: 5px;
-            border: 3px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        body{
+            margin: 30px;
+            background-color: blue;
         }
              .container{
             display: grid;
+            background-color: aliceblue;
             grid-template-areas:
                 "Hleft Hmid Hright"
-                "nav nav nav"
-                "banner banner off1"
-                "banner banner off2"
+                "shead shead shead"
+                "head head head"
+                "bhead bhead bhead"
+                "join join join"
                 "lm product product"
                 "recent product product"
                 "tags product product"
@@ -23,6 +28,7 @@
             grid-template-columns: repeat(3, auto);
             grid-template-rows: repeat(8, 100px);
             gap: 5px;
+            /* background-color: aliceblue; */
         }
         .Hleft{
             grid-area: Hleft;
@@ -34,7 +40,6 @@
         }
         .Hmid{
             grid-area: Hmid;
-            background-color: rgb(105, 23, 23);
             grid-template-columns: repeat(4,auto);
             font-size: 30px;
             align-content: center;
@@ -44,6 +49,52 @@
         .Hright{
             grid-area: Hright;
             background-color: rgb(231, 225, 225);
+            font-size: 30px;
+            align-content: center;
+            text-align: center;
+            background-color: blue;
+            color: aliceblue;
+            margin-left: 90px;
+            border-radius: 50%;
+            width: 50%;
+        }
+        .shead{
+            margin: 5%;
+            grid-area: shead;
+            align-content: center;
+            text-align: center;
+            background-color: lightblue;
+            color: blue;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: larger;
+        }
+        .head{
+            margin: 2%;
+            grid-area: head;
+            align-content: center;
+            font-size: 60px;
+            text-align: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .bhead{
+            margin-top: 5%;
+            grid-area: bhead;
+            align-content: center;
+            font-size: medium;
+            text-align: center;
+            color: gray;
+            /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+        }
+        .join{
+            margin-top: 5%;
+            grid-area: join;
+            align-content: center;
+            font-size: 30px;
+            background-color: blue;
+            text-align: center;
+            color: aliceblue;
+            /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
         }
 
     </style>
@@ -60,7 +111,22 @@
                 <p4>About Us</p4>
             </div>
             <div class="Hright">
-                <button>Sign In</button>
+                <!-- <button>Sign In</button> -->
+                Sign In
+            </div>
+            <div class="shead">
+                Over 3 million ready-to-work Creatives!
+            </div>
+            <div class="head">
+                Start Your Journey Toward<br>
+                 Academic Excellence
+            </div>
+            <div class="bhead">
+                We have simplified the learning process to suit your needs, offtering user-friendly courses<br>
+                design for easy comprehension and practical application.
+            </div>
+            <div class="join">
+                Join Course
             </div>
         </div>
 </body>
