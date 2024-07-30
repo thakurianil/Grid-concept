@@ -5,270 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>first website</title>
+    <link rel="stylesheet" href="first.css" />
     <style>
-        * {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
 
-        body {
-
-            background-color: lightblue;
-            height: auto;
-            margin: 5%;
-        }
-
-        .container {
-            display: grid;
-            background-color: aliceblue;
-            /* height: 800px; */
-            grid-template-areas:
-                "Hleft Hmid Hright"
-                "shead shead shead"
-                "head head head"
-                "bhead bhead bhead"
-                "join join join"
-                "pics pics pics"
-                "banner banner banner"
-                "description description description"
-                "ol ol ol"
-            ;
-
-            grid-template-columns: repeat(3, auto);
-            grid-template-rows: repeat(8, auto);
-            /* gap: 5px; */
-            /* background-color: aliceblue; */
-        }
-
-        .Hleft {
-            margin: 5%;
-            grid-area: Hleft;
-            /* background-color: rgb(85, 26, 26); */
-            font-size: 30px;
-            align-content: center;
-            text-align: center;
-            color: blue;
-        }
-
-        .Hmid {
-            margin: 5%;
-            grid-area: Hmid;
-            grid-template-columns: repeat(4, auto);
-            font-size: 30px;
-            align-content: center;
-            text-align: center;
-            gap: 10;
-        }
-
-        .Hright {
-            margin: 5%;
-            grid-area: Hright;
-            /* background-color: rgb(231, 225, 225); */
-            font-size: 30px;
-            align-content: center;
-            text-align: center;
-            /* background-color: blue; */
-            color: Blue;
-            /* margin-left: 90px; */
-            /* border-radius: 50%; */
-            /* width: 50%; */
-        }
-
-        .shead {
-            margin: 1cm;
-            grid-area: shead;
-            align-content: center;
-            text-align: center;
-            /* background-color: lightblue; */
-            color: blue;
-            font-family: 'Courier New', Courier, monospace;
-            font-size: larger;
-
-        }
-
-        shead {
-            font-size: 20px;
-            background-color: lightblue;
-            border-radius: 15%;
-
-        }
-
-        .head {
-            margin: 1cm;
-            grid-area: head;
-            align-content: center;
-            font-size: 60px;
-            text-align: center;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        }
-
-        .bhead {
-            margin: 1px;
-            grid-area: bhead;
-            align-content: center;
-            font-size: medium;
-            text-align: center;
-            color: gray;
-            /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
-        }
-
-        .join {
-            margin: 1cm;
-            grid-area: join;
-            align-content: center;
-            font-size: 30px;
-            background-color: aliceblue;
-            text-align: center;
-            color: blue;
-            /* height: 400px; */
-            /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
-        }
-
-        .pics {
-            margin: 20px;
-            grid-area: pics;
-            align-content: center;
-            font-size: 30px;
-            display: grid;
-            gap: 5%;
-            grid-template-columns: repeat(4, auto);
-            height: 400px;
-            width: 400px;
-            /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
-        }
-
-        .img1 {
-            height: 400px;
-            width: 400px;
-            grid-column: 1/1;
-        }
-
-        .img2 {
-            height: 400px;
-            width: 400px;
-            grid-column: 2/2;
-
-        }
-
-        .img3 {
-            height: 400px;
-            width: 400px;
-            grid-column: 3/3;
-
-        }
-
-        .img4 {
-            height: 400px;
-            width: 400px;
-            grid-column: 4/4;
-        }
-
-        .banner {
-            grid-area: banner;
-            margin-top: 1cm;
-            /* margin-top: 25%; */
-            align-content: center;
-            font-size: 30px;
-            height: 300px;
-            background-color: blue;
-            text-align: center;
-            color: aliceblue;
-            display: grid;
-            grid-template-columns: repeat(4, auto);
-        }
-
-        .description {
-            grid-area: description;
-            font-size: 45px;
-            margin: 3cm;
-            align-content: center;
-            text-align: center;
-
-        }
-
-        .ol {
-            grid-area: ol;
-            font-size: 45px;
-            /* margin: 3cm; */
-            align-content: center;
-            text-align: center;
-            display: grid;
-            grid-template-columns: repeat(2, 50%, 50%);
-            grid-template-rows: repeat(2, auto);
-
-        }
-
-        .olleft {
-            grid-column: 1/2;
-            grid-row: 1/1;
-            font-size: 45px;
-             align-content: center;
-            text-align: center;
-            background-color: violet;
-
-        }
-        .olleft-downbody{
-            margin: 3cm;
-            align-content: center;
-            text-align: center;
-            display: grid;
-            gap: 10px;
-            grid-template-columns: repeat(2, auto);
-            /* grid-template-rows: repeat(2, auto); */
-        }
-
-        .olleft-head {
-            align-content: left;
-            text-align: left;
-            margin-bottom: 1cm;
-        }
-
-        .olleft-body {
-            align-content: center;
-            text-align: left;
-            font-size: medium;
-        }
-
-        .olright {
-            grid-column: 2/2;
-            grid-row: 1/2;
-            font-size: 45px;
-            
-            align-content: center;
-            text-align: center;
-            background-color: yellowgreen;
-        }
-        .olleft1 {
-            grid-column: 1/1;
-            /* grid-row: 1/2; */
-            font-size: 45px;
-            
-            align-content: center;
-            text-align: center;
-            background-color: yellowgreen;
-        }
-        .olleft2{
-            grid-column: 2/2;
-            /* grid-row: 1/2; */
-            font-size: 45px;
-            
-            align-content: center;
-            text-align: center;
-            background-color: yellowgreen;
-        }
-
-
-        .olright-head {
-            align-content: left;
-            text-align: left;
-            margin-bottom: 1cm;
-        }
-
-
-        .olright-body {
-            align-content: center;
-            text-align: left;
-            font-size: medium;
-        }
     </style>
 </head>
 
@@ -335,11 +74,11 @@
             today and take the first step {Creative} academic excellence.
 
         </div>
-        
+
         <div class="ol">
             <!-- left part  -->
             <div class="olleft">
-                <div class="olleft-head" Online Learning <br>
+                <div class="olleft-head"> Online Learning <br>
                     Designed For Real Life
                 </div>
                 <div class="olleft-body">
@@ -354,7 +93,7 @@
                 <!-- left part of online learning part section 1-->
                 <div class="olleft1">
                     <div class="olright-head">
-                        User-friendly platform to learn
+                        User-friendly platform<br> to learn more
                     </div>
                     <!-- two section  -->
                     <div class="olright-body">
@@ -365,7 +104,7 @@
                 <!-- left part of online learning part section 2 -->
                 <div class="olleft2">
                     <div class="olright-head">
-                        User-friendly platform to learn
+                        User-friendly platform<br> to learn more
                     </div>
                     <div class="olright-body">
                         Packed with modern tech,<br> classroom learning which used to <br>
@@ -375,14 +114,123 @@
             </div>
 
             <div class="olright">
-                <div class="olright-head">
-                    User-friendly platform to learn
+                <div class="olrightbody">
+
+                    <div class="olright-head">
+                        User-friendly platform to learn
+                    </div>
+                    <div class="olright-body">
+                        Packed with modern tech, classroom learning which used to <br>
+                        be done conventionally.
+                    </div>
                 </div>
-                <div class="olright-body">
-                    Packed with modern tech, classroom learning which used to <br>
-                    be done conventionally.
-                </div>
+
             </div>
+        </div>
+        <div class="CPAK">
+            <div class="CPAK-head">
+                Community Passionate About Knowlegde
+            </div>
+            <div class="CPAK-head2">
+                From foundational courses that lay the groundwork for your<br>
+                educational journey to advanced specializations.
+            </div>
+            <div class="CPAK-body">
+                <div class="CPAK-body1">
+                    <img src="./Images/Travel.jpeg" />
+                    <cpak-font>UI/UX design and Research<br>
+                        <cpak-subfont>200 Course * 1000+ students</cpak-subfont>
+
+                    </cpak-font>
+                </div>
+                <div class="CPAK-body2">
+                    <img src="./Images/Travel.jpeg" />
+                    <cpak-font>Development<br>
+                        <cpak-subfont>200 Course * 1000+ students</cpak-subfont>
+
+                    </cpak-font>
+                </div>
+                <div class="CPAK-body3">
+                    <img src="./Images/Travel.jpeg" />
+                    <cpak-font>Project Manager<br>
+                        <cpak-subfont>200 Course * 1000+ students</cpak-subfont>
+
+                    </cpak-font>
+
+                </div>
+                <div class="CPAK-body4">
+                    <img src="./Images/Travel.jpeg" />
+                    <cpak-font>Digital Marketing<br>
+                        <cpak-subfont>200 Course * 1000+ students</cpak-subfont>
+
+                    </cpak-font>
+
+                </div>
+                <div class="CPAK-body5">
+                    <img src="./Images/Travel.jpeg" />
+                    <cpak-font>Brand Logo Design<br>
+                        <cpak-subfont>200 Course * 1000+ students</cpak-subfont>
+
+                    </cpak-font>
+
+                </div>
+                <div class="CPAK-body6">
+                    <img src="./Images/Travel.jpeg" />
+                    <cpak-font>Content Creator<br>
+                        <cpak-subfont>200 Course * 1000+ students</cpak-subfont>
+
+                    </cpak-font>
+                </div>
+
+            </div>
+        </div>
+        <div class="course">
+            <div class="course-left">
+                <div class="course-head">
+                    Join us today to embark<br> on your journey to<br> success!
+                </div>
+                <div class="course-body">
+                    Take advantage of our comprehension resources, expert guidance,<br>
+                    and supportive community to acheive your educational and<br>
+                    professional goals.
+                </div>
+                <button class="Join-course">
+                    Join Course
+                </button>
+
+            </div>
+            <img class="course-img" src="./Images/Travel.jpeg" />
+
+        </div>
+        <div class="mentor">
+            <div class="mentor-head">
+                Our Professional & Experience Mentors
+            </div>
+            <div class="mentor-subhead">
+                From foundational courses that lay the groundwork for your<br>
+                educational journey to advanced specializations.
+
+            </div>
+            <div class="mentor-img">
+                <div class="mentor1">
+
+                    <mentortitle> Joseph Ferguso</mentortitle><br>
+                    7 years experience
+
+                </div>
+                <div class="mentor2">
+                    <img class="mentorimg2" src="./Images/Travel.jpeg" />
+                    <img class="mentorimg3" src="./Images/Travel.jpeg" />
+                    <img class="mentorimg4" src="./Images/Travel.jpeg" />
+                    <img class="mentorimg5" src="./Images/Travel.jpeg" />
+                </div>
+
+            </div>
+        </div>
+        <div class="footer">
+            <hr style="width: 90%;">
+
+            All rights reserved @Dewo
         </div>
     </div>
 </body>
