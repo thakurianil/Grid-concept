@@ -378,6 +378,8 @@ cpak-subfont {
     text-align: center;
     font-family: serif;
     height: 90px;
+    display: grid;
+
 }
 
 .course {
@@ -471,9 +473,10 @@ cpak-subfont {
     width: 400px;
 }
 mentortitle{
+
     font-size: 20px;
-    /* align-content: baseline; */
-    text-align: end;
+    align-content: left;
+    text-align: left;
 }
 .mentor1{
     grid-column: 1/1;
@@ -484,4 +487,14 @@ mentortitle{
 .mentor2{
     grid-column: 2/2;
     margin-left: -2cm;
+}
+rightfooter{
+    align-content: center;
+    text-align: right;
+    font-size: large;
+    margin-right: 3cm;
+}
+leftfooter{
+    align-content: center;
+    text-align: left;
 }
