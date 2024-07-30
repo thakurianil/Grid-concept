@@ -4,10 +4,9 @@
 }
 
 body {
-
     background-color: lightblue;
-    height: auto;
     margin: 5%;
+    border-radius: 50px;
 }
 
 .container {
@@ -27,12 +26,13 @@ body {
         "CPAK CPAK CPAK"
         "course course course"
         "mentor mentor mentor"
-        "afooter afooter afooter"
+        "af af af"
+
         "footer footer footer"
     ;
 
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(15, auto);
+    grid-template-columns: repeat(3, 100px, auto, auto);
+    grid-template-rows: repeat(14, auto);
     /* gap: 5px; */
     /* background-color: aliceblue; */
 }
@@ -40,21 +40,23 @@ body {
 .Hleft {
     margin: 5%;
     grid-area: Hleft;
-    /* background-color: rgb(85, 26, 26); */
     font-size: 30px;
     align-content: center;
     text-align: center;
     color: blue;
+    /* width: 15%; */
 }
 
 .Hmid {
-    /* margin: 5%; */
+    margin: 5%;
     grid-area: Hmid;
-    padding: 15%;
-    grid-template-columns: repeat(4, auto);
+    /* background-color: rgb(85, 26, 26); */
+
+    /* grid-template-columns: repeat(4, auto); */
     font-size: 20px;
     align-content: center;
     text-align: center;
+    /* width: 50%; */
     /* gap: 10; */
 }
 
@@ -63,6 +65,8 @@ body {
     grid-area: Hright;
     /* background-color: rgb(231, 225, 225); */
     font-size: 30px;
+    /* height: 20%; */
+    /* background-color: red; */
     align-content: center;
     text-align: center;
     /* background-color: blue; */
@@ -77,21 +81,25 @@ body {
     grid-area: shead;
     align-content: center;
     text-align: center;
+    /* padding: 20px; */
     /* background-color: lightblue; */
+    border-radius: 50px;
     color: blue;
     font-family: 'Courier New', Courier, monospace;
     font-size: larger;
-
+    /* width: 50%; */
 }
-
-.shead {
-    font-size: 20px;
+shead{
+    padding: 20px;
+    border-radius: 45px;
     background-color: lightblue;
-    border-radius: 15%;
-
+    color: blue;
+    display: inline-block;
+    border: none;
+    font-size: large;
 }
 
-.head {
+.starthead {
     margin: 1cm;
     grid-area: head;
     align-content: center;
@@ -107,6 +115,7 @@ body {
     font-size: medium;
     text-align: center;
     color: gray;
+
     /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
 }
 
@@ -114,14 +123,35 @@ body {
     margin: 1cm;
     grid-area: join;
     align-content: center;
-    font-size: 30px;
+    /* font-size: 60px; */
+    /* height: 90px; */
     background-color: aliceblue;
     text-align: center;
     color: blue;
+    /* margin: 4px 2px; */
     /* height: 400px; */
     /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
 }
-
+.button1{
+    padding: 20px;
+    border-radius: 45px;
+    background-color: blue;
+    color: aliceblue;
+    display: inline-block;
+    border: none;
+    font-size: large;
+}
+.button2{
+    margin-top: 10px;
+    padding: 2px;
+    border-radius: 45px;
+    background-color: aliceblue;
+    /* color:; */
+    /* display: inline-block; */
+    border: none;
+    width: 150px;
+    font-size: 20px;
+}
 .pics {
     margin: 20px;
     grid-area: pics;
@@ -132,6 +162,8 @@ body {
     grid-template-columns: repeat(4, auto);
     height: 400px;
     width: 400px;
+    border-radius: 45px;
+
     /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
 }
 
@@ -139,12 +171,15 @@ body {
     height: 400px;
     width: 400px;
     grid-column: 1/1;
+    border-radius: 45px;
+
 }
 
 .img2 {
     height: 400px;
     width: 400px;
     grid-column: 2/2;
+    border-radius: 45px;
 
 }
 
@@ -152,6 +187,7 @@ body {
     height: 400px;
     width: 400px;
     grid-column: 3/3;
+    border-radius: 45px;
 
 }
 
@@ -159,6 +195,8 @@ body {
     height: 400px;
     width: 400px;
     grid-column: 4/4;
+    border-radius: 45px;
+
 }
 
 .banner {
@@ -242,8 +280,10 @@ body {
     font-size: 45px;
     /* align-content: center; */
     text-align: center;
-    background-image: url("Images/Travel.jpeg");
-    border-radius: 3%;
+    background-image: url("Images/c.jpg");
+    background-position:10%;
+    
+    border-radius: 5%;
 }
 
 .olleft1 {
@@ -251,6 +291,7 @@ body {
     /* grid-row: 1/2; */
     font-size: 30px;
     padding: 1cm;
+    border-radius: 5%;
 
     align-content: center;
     text-align: center;
@@ -263,6 +304,7 @@ body {
     font-size: 30px;
     /* margin: 5px; */
     padding: 1cm;
+    border-radius: 5%;
 
     align-content: center;
     text-align: center;
@@ -282,6 +324,8 @@ body {
     align-content: center;
     text-align: left;
     font-size: medium;
+    /* border-radius: 5%; */
+    
 }
 
 .olrightbody {
@@ -291,6 +335,8 @@ body {
     font-size: 30px;
     margin: 1cm;
     padding: 1cm;
+    border-radius: 5%;
+
 
 }
 
@@ -326,6 +372,8 @@ body {
     height: 400px;
     width: 500px;
     padding-bottom: 0.5cm;
+    border-radius: 45px;
+
 }
 
 .CPAK-body1 {
@@ -373,19 +421,21 @@ cpak-subfont {
 
 
 .footer {
+    margin: 2%;
     grid-area: footer;
     font-size: 25px;
     align-content: center;
     text-align: center;
     font-family: serif;
-    height: 90px;
+    height: auto;
 }
 
 .course {
     margin: 3cm;
     grid-area: course;
     background-color: blue;
-    border-radius: 2%;
+    border-radius: 45px;
+
     align-content: center;
     /* padding: 5%; */
     display: grid;
@@ -421,13 +471,9 @@ cpak-subfont {
 }
 
 .Join-course {
-    margin-top: 2cm;
     grid-column: 1/1;
     grid-row: 3/3;
-    font-size: 20px;
-    height: 50px;
-    width: 150px;
-    border-radius: 15%;
+    
 }
 
 .course-img {
@@ -435,6 +481,8 @@ cpak-subfont {
     margin-left: 35%;
     height: 500px;
     grid-column: 2/2;
+    border-radius: 45px;
+
     /* margin-top: -2cm; */
     /* align-content: right; */
     /* margin-right: -4cm; */
@@ -504,14 +552,42 @@ leftfooter{
     text-align: left;
     grid-column: 1/1;
 }
-.afooter{
-    margin: 3cm;
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-template-rows: repeat(2,auto);
-}
+.af{
+    background-color: black;
+    align-content: center;
+    
+    /* grid-template-columns: repeat(3, auto); */
+    /* grid-template-rows: repeat(2,auto); */
+} 
 .afleft-head{
     font-size: 25px;
     color: blue;
     margin-bottom: 1cm;
+}
+.afleft{
+    grid-column: 1/1;
+    /* width: 300%; */
+    /* background-color: blue; */
+}
+.afright{
+    grid-column: 2/2;
+    /* background-color: bisque; */
+    /* display: grid;
+    grid-template-areas: 
+    "Address email phone"; */
+    /* grid-template-columns: repeat(3,auto); */
+    /* align-content: right; */
+    /* margin-left: 7cm; */
+    /* padding-left: 12cm; */
+    /* gap: 1cm; */
+    /* width: 100%; */
+}
+.afhead{
+    font-size: larger;
+    /* color: gray; */
+    margin-bottom: 1cm;
+}
+.afbody{
+    font-size: medium;
+    color: gray;
 }
