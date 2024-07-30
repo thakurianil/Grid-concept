@@ -27,6 +27,7 @@ body {
         "CPAK CPAK CPAK"
         "course course course"
         "mentor mentor mentor"
+        "afooter afooter afooter"
         "footer footer footer"
     ;
 
@@ -378,8 +379,6 @@ cpak-subfont {
     text-align: center;
     font-family: serif;
     height: 90px;
-    display: grid;
-
 }
 
 .course {
@@ -488,13 +487,31 @@ mentortitle{
     grid-column: 2/2;
     margin-left: -2cm;
 }
+.footerhead{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+}
 rightfooter{
     align-content: center;
     text-align: right;
     font-size: large;
     margin-right: 3cm;
+    grid-column: 2/2;
 }
 leftfooter{
+    margin-left: 5%;
     align-content: center;
     text-align: left;
+    grid-column: 1/1;
+}
+.afooter{
+    margin: 3cm;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(2,auto);
+}
+.afleft-head{
+    font-size: 25px;
+    color: blue;
+    margin-bottom: 1cm;
 }
